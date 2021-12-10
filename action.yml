@@ -1,0 +1,13 @@
+name: 'Azure ZipDeploy'
+description: 'Publish .zip file using ZipDeploy'
+inputs:
+  zip: 
+    description: 'Zip location'
+    required: true
+    default: 'app.zip'
+  profile:  
+    description: 'Publish profile content'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
